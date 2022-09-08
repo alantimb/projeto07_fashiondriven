@@ -1,5 +1,10 @@
 body {
-    background-color: teal;
+    background-color: red;
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 header {
@@ -7,10 +12,6 @@ header {
     height: 7vh;
     background-color: #404eed;
 
-    /* font-family: 'New Rocker', cursive;
-    font-weight: 400;
-    font-size: 32px;
-    color: #fcfcfc; */
     display: flex;
     align-items: center;
 
@@ -28,7 +29,51 @@ header>img {
 main {
     margin-top: 7vh;
     margin-bottom: 25vh;
+    background-color: yellowgreen;
+    height: 68vh;
+    width: 100vw;
+
+    display: flex;
+
 }
+
+main .ilustracao {
+    width: 48vw;
+    height: 100%;
+    background-color: #404eed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .ilustracao>img {
+    width: 90%;
+    height: 90%;
+}
+
+main .menu-opcoes {
+    width: 52vw;
+    height: 100%;
+    background-color: #e5e5e5;
+    padding: 2% 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .menu-opcoes .opcoes {
+    display: flex;
+}
+
+main .menu-opcoes .opcoes .opcao {
+    background-color: tomato;
+    /* inserir aqui opções de margem/distanciamento
+    e arredondamento da borda, além de alteração da cor do fundo */
+}
+
 
 footer {
     width: 100%;
