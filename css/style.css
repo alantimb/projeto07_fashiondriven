@@ -232,6 +232,7 @@ footer>h1 {
     width: 8%;
     height: 100%;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -244,7 +245,7 @@ footer>h1 {
 }
 
 .camisa-div>h3 {
-    font-size: 16px;
+    font-size: 70%;
     font-weight: 400;
-    word-wrap: break-word;
+    word-break: break-word;
 }
