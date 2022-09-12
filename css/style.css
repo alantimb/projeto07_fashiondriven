@@ -52,11 +52,41 @@ main .ilustracao>img {
     height: 90%;
 }
 
+main .conteudo-esquerdo {
+    width: 60%;
+}
+
+
 main .menu-opcoes {
     width: 52vw;
     height: 100%;
     background-color: #e5e5e5;
-    padding: 2% 20%;
+    padding: 5% 8% 5% 8%;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.menu-opcoes h1 {
+    font-size: 18px;
+    font-weight: 400px;
+    margin-bottom: 2px;
+}
+
+.opcoes {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.opcao {
+    width: 120px;
+    height: 120px;
+    margin-top: 5px;
+    margin-right: 20px;
+    /* background-color: #ffffff; */
+    border-radius: 9px;
 
     display: flex;
     flex-direction: column;
@@ -64,14 +94,73 @@ main .menu-opcoes {
     align-items: center;
 }
 
-main .menu-opcoes .opcoes {
+.image {
+    width: 100px;
+    height: 100px;
+    padding: 10%;
+    border: 0.5px solid #c4c4c4;
+    border-radius: 100px;
+    background: linear-gradient(0deg, #C4C4C4, #C4C4C4),
+        linear-gradient(0deg, #F2F2F2, #F2F2F2);
+
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-main .menu-opcoes .opcoes .opcao {
-    background-color: tomato;
-    /* inserir aqui opções de margem/distanciamento
-    e arredondamento da borda, além de alteração da cor do fundo */
+.selecionado {
+    width: 100px;
+    height: 100px;
+    padding: 10%;
+    border: 3px solid #404eed;
+    border-radius: 100px;
+    background: linear-gradient(0deg, #C4C4C4, #C4C4C4),
+        linear-gradient(0deg, #F2F2F2, #F2F2F2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image>img {
+    height: 70px;
+    width: 80px;
+}
+
+.opcao>h2 {
+    /* width: 50px; */
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.img-referencia>h1 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.botao-desativado {
+    height: 30px;
+    width: 70%;
+    margin-top: 10px;
+    color: #FCFCFC;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    border: 0px solid #c4c4c4;
+}
+
+.botao-clicado {
+    height: 30px;
+    width: 70%;
+    margin-top: 10px;
+    color: #FCFCFC;
+    background-color: #404eed;
+    border-radius: 10px;
+    border: 0px solid #404eed;
+}
+
+.img-referencia>input {
+    width: 70%;
 }
 
 
