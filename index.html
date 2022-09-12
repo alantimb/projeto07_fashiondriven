@@ -23,103 +23,104 @@
     <header>
         <img src="./FashionDriven/Logo.png" alt="Logo da FashionDriven">
     </header>
-    <!--
-    onclick="selecionaOpcaoDeModelo(this)"
-    onclick="selecionaOpcaoDeModelo(this)" -->
+
+    <!-- Conteudo principal -->
     <main>
-        <aside class="conteudo-esquerdo">
-            <div class="menu-opcoes">
-                <section class="modelos escolha">
-                    <h1>Escolha o modelo</h1>
-                    <div class="opcoes">
-                        <div class="opcao">
-                            <div class="image" id="t-shirt" onclick="selecionaOpcaoDeModelo(this)">
-                                <img src="./FashionDriven/tshirt.png" alt="Modelo de t-shirt">
-                            </div>
-                            <h2>T-shirt</h2>
+        <div class="menu">
+            <section class="modelos secao">
+                <h1>Escolha o modelo</h1>
+                <ul class="opcoes">
+                    <li class="opcao">
+                        <div class="image" id="t-shirt" onclick="selecionaOpcaoDeModelo(this)">
+                            <img src="./FashionDriven/tshirt.png" alt="Modelo de t-shirt">
                         </div>
-                        <div class="opcao">
-                            <div class="image" id="top-tank" onclick="selecionaOpcaoDeModelo(this)">
-                                <img src="./FashionDriven/Camiseta.png" alt="Modelo de camiseta">
-                            </div>
-                            <h2>Camiseta</h2>
+                        <h2>T-shirt</h2>
+                    </li>
+                    <li class="opcao">
+                        <div class="image" id="top-tank" onclick="selecionaOpcaoDeModelo(this)">
+                            <img src="./FashionDriven/Camiseta.png" alt="Modelo de camiseta">
                         </div>
-                        <div class="opcao">
-                            <div class="image" id="long" onclick="selecionaOpcaoDeModelo(this)">
-                                <img src="./FashionDriven/Mangalonga.png" alt="Modelo de camisa de manga longa">
-                            </div>
-                            <h2>Manga longa</h2>
-                        </div>
-                    </div>
-                </section>
+                        <h2>Camiseta</h2>
+                    </li>
 
-                <section class="golas escolha">
-                    <h1>Escolha a gola</h1>
-                    <div class="opcoes">
-                        <div class="opcao">
-                            <div class="image" id="v-neck" onclick="selecionaOpcaoDeGola(this)">
-                                <img src="./FashionDriven/GolaV.png" alt="Modelo de camisa de gola v">
-                            </div>
-                            <h2>Gola V</h2>
+                    <li class="opcao">
+                        <div class="image" id="long" onclick="selecionaOpcaoDeModelo(this)">
+                            <img src="./FashionDriven/Mangalonga.png" alt="Modelo de camisa de manga longa">
                         </div>
-                        <div class="opcao">
-                            <div class="image" id="round" onclick="selecionaOpcaoDeGola(this)">
-                                <img src="./FashionDriven/GolaRedonda.png" alt="Modelo de camisa de gola redonda">
-                            </div>
-                            <h2>Gola Redonda</h2>
-                        </div>
-                        <div class="opcao">
-                            <div class="image" id="polo" onclick="selecionaOpcaoDeGola(this)">
-                                <img src="./FashionDriven/GolaPolo.png" alt="Modelo de camisa de gola polo">
-                            </div>
-                            <h2>Gola Polo</h2>
-                        </div>
-                    </div>
-                </section>
+                        <h2>Manga longa</h2>
+                    </li>
+                </ul>
+            </section>
 
-                <section class="tecidos escolha">
-                    <h1>Escolha o tecido</h1>
-                    <div class="opcoes">
-                        <div class="opcao">
-                            <div class="image" id="silk" onclick="selecionaOpcaoDeTecido(this)">
-                                <img src="./FashionDriven/Seda.png" alt="Tecido de seda">
-                            </div>
-                            <h2>Seda</h2>
+            <section class="golas secao">
+                <h1>Escolha a gola</h1>
+                <ul class="opcoes">
+                    <li class="opcao">
+                        <div class="image" id="v-neck" onclick="selecionaOpcaoDeGola(this)">
+                            <img src="./FashionDriven/GolaV.png" alt="Modelo de camisa de gola v">
                         </div>
-                        <div class="opcao">
-                            <div class="image" id="cotton" onclick="selecionaOpcaoDeTecido(this)">
-                                <img src="./FashionDriven/Algodão.png" alt="Tecido de algodão">
-                            </div>
-                            <h2>Algodão</h2>
+                        <h2>Gola V</h2>
+                    </li>
+                    <li class="opcao">
+                        <div class="image" id="round" onclick="selecionaOpcaoDeGola(this)">
+                            <img src="./FashionDriven/GolaRedonda.png" alt="Modelo de camisa de gola redonda">
                         </div>
-                        <div class="opcao">
-                            <div class="image" id="polyester" onclick="selecionaOpcaoDeTecido(this)">
-                                <img src="./FashionDriven/Poliester.png" alt="Tecido de poliéster">
-                            </div>
-                            <h2>Poliéster</h2>
+                        <h2>Gola Redonda</h2>
+                    </li>
+                    <li class="opcao">
+                        <div class="image" id="polo" onclick="selecionaOpcaoDeGola(this)">
+                            <img src="./FashionDriven/GolaPolo.png" alt="Modelo de camisa de gola polo">
                         </div>
-                    </div>
-                </section>
+                        <h2>Gola Polo</h2>
+                    </li>
+                </ul>
+            </section>
 
-                <div class="img-referencia">
-                    <h1>Imagem de referência</h1>
-                    <input id="url" type="text" onchange="recebeLink(this.value)" placeholder="Insira o link">
-                </div>
+            <section class="tecidos secao">
+                <h1>Escolha o tecido</h1>
+                <ul class="opcoes">
+                    <li class="opcao">
+                        <div class="image" id="silk" onclick="selecionaOpcaoDeTecido(this)">
+                            <img src="./FashionDriven/Seda.png" alt="Tecido de seda">
+                        </div>
+                        <h2>Seda</h2>
+                    </li>
+                    <li class="opcao">
+                        <div class="image" id="cotton" onclick="selecionaOpcaoDeTecido(this)">
+                            <img src="./FashionDriven/Algodão.png" alt="Tecido de algodão">
+                        </div>
+                        <h2>Algodão</h2>
+                    </li>
+                    <li class="opcao">
+                        <div class="image" id="polyester" onclick="selecionaOpcaoDeTecido(this)">
+                            <img src="./FashionDriven/Poliester.png" alt="Tecido de poliéster">
+                        </div>
+                        <h2>Poliéster</h2>
+                    </li>
+                </ul>
+            </section>
 
+            <section class="img-referencia secao">
+                <h1>Imagem de referência</h1>
+                <input id="url" type="text" onchange="recebeLink(this.value)" placeholder="Insira o link">
+            </section>
+
+            <section class="button secao">
                 <button class="botao-desativado botao">Confirmar Pedido</button>
-            </div>
-        </aside>
-
-        <div class="conteudo-direito">
-            <figure class="ilustracao">
-                <img src="./FashionDriven/ilustração.png" alt="Ilustração de uma modelo com cores ao fundo">
-            </figure>
+            </section>
         </div>
+
+        <figure class="ilustracao">
+            <img src="./FashionDriven/ilustração.png" alt="Ilustração de uma modelo com cores ao fundo">
+        </figure>
+
     </main>
 
-    <!-- <footer>
+    <footer>
         <h1>Últimos pedidos</h1>
-    </footer> -->
+        <div class="ultimos-pedidos">
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
